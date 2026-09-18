@@ -757,24 +757,26 @@ section,
 
 .hero .cta-buttons .btn.btn-primary {
   background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
   color: var(--contrast-color);
 }
 
 .hero .cta-buttons .btn.btn-primary:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background-color: transparent;
+  border-color: var(--accent-color);
+  color: var(--accent-color);
   transform: translateY(-2px);
 }
 
 .hero .cta-buttons .btn.btn-outline {
-  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  border: 2px solid var(--accent-color);
   color: var(--accent-color);
   background: transparent;
 }
 
 .hero .cta-buttons .btn.btn-outline:hover {
   background-color: var(--accent-color);
+  border-color: var(--accent-color);
   color: var(--contrast-color);
   transform: translateY(-2px);
 }
